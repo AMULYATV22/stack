@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StackScope - Stack Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>🌀 StackScope</h1>
+
+  <div class="controls">
+    <input type="text" id="elementInput" placeholder="Enter element" />
+    <button onclick="pushElement()">Push</button>
+    <button onclick="popElement()">Pop</button>
+    <button onclick="peekElement()">Peek</button>
+    <button onclick="getMiddle()">Middle</button>
+    <button onclick="clearStack()">Clear</button>
+    <button onclick="undoStack()">Undo</button>
+  </div>
+  <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+
+  <div id="stack-container"></div>
+
+  <h2>🧮 Recursive Execution (Factorial)</h2>
+  <input type="number" id="recInput" placeholder="Enter number for factorial" />
+  <button onclick="startFactorial()">Visualize Factorial</button>
+  <div id="recursion-stack"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

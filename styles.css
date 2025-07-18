@@ -1,0 +1,98 @@
+/* General Page Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eef2f7;
+  text-align: center;
+  padding: 30px;
+  color: #333;
+}
+
+h1 {
+  font-size: 36px;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-top: 40px;
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+input, button {
+  padding: 10px 15px;
+  margin: 6px 3px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #357ABD;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+/* Stack Display */
+#stack-container, #recursion-stack {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-top: 20px;
+  min-height: 150px;
+}
+
+.stack-element, .rec-call {
+  padding: 10px 20px;
+  margin: 6px 0;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  width: fit-content;
+  transition: transform 0.3s ease;
+}
+
+.stack-element:hover, .rec-call:hover {
+  transform: scale(1.05);
+}
+
+/* Highlight middle element */
+.middle {
+  background-color: #f39c12 !important;
+}
+.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+.dark-mode input,
+.dark-mode button {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+.dark-mode .stack-element,
+.dark-mode .rec-call {
+  background-color: #555;
+  color: #fff;
+}
+
+.dark-mode .middle {
+  background-color: #e67e22 !important;
+}
